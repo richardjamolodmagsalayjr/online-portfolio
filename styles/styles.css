@@ -92,7 +92,7 @@ section {
           transform: translate(0) scale(1);
 }
 
-.controls {
+.controls-container {
   position: fixed;
   z-index: 10;
   top: 50%;
@@ -114,17 +114,17 @@ section {
           transform: translateY(-50%);
 }
 
-.controls .active-btn {
+.controls-container .active-btn {
   background-color: var(--color-secondary) !important;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
 
-.controls .active-btn i {
+.controls-container .active-btn i {
   color: var(--color-white) !important;
 }
 
-.controls .control-btn {
+.controls-container .control-btn {
   padding: 1rem;
   cursor: pointer;
   background-color: var(--color-grey-4);
