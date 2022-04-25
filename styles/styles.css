@@ -124,7 +124,7 @@ section {
   color: var(--color-white) !important;
 }
 
-.controls .control {
+.controls .control-btn {
   padding: 1rem;
   cursor: pointer;
   background-color: var(--color-grey-4);
