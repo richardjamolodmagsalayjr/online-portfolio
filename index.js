@@ -1,16 +1,17 @@
 const sections = document.querySelector('.section');
-const controls_container = document.querySelectorAll('.controls');
-const control_btns = document.querySelectorAll('.control-btn'); 
-const sections_container = document.querySelector('.main-content');
+const controlButtonsContainer = document.querySelectorAll('.control-buttons-container');
+const controlButtons = document.querySelectorAll('.control-button');
+const sectionsContainer = document.querySelector('.main-content');
 
-function  pageTransition() {
+function pageTransition() {
     // When button clicked, add style to it to make it active.
-    for(let i = 0; i < control_btns.length; i++){
-        control_btns[i].addEventListener('click', function() {
-            let current_btn = document.querySelectorAll('.active-btn');
-            current_btn[0].className = current_btn[0].className.replace('active-btn', '')
-            this.className += ' active-btn'
-        } )
-    } 
+    // loop through all the buttons to add an event listener 
+    for (let i = 0; i < controlButtons.length; i++) { 
+        controlButtons[i].addEventListener('click', function () {
+            let current_btn = document.querySelector('.active-button');
+            current_btn.className = current_btn.className.replace('active-button', '')
+            this.className += ' active-button'
+        })
+    }
 }
 pageTransition()
