@@ -83,7 +83,7 @@ section{
 }
 
 //Controls
-.controls-container{
+.control-buttons-container{
     position: fixed;
     z-index: 10;
     top: 50%;
@@ -93,14 +93,14 @@ section{
     align-items: center;
     justify-content: center;
     transform: translateY(-50%);
-    .active-btn{
+    .active-button, :hover{
         background-color: var(--color-secondary) !important;
         transition:  all .4s ease-in-out;
         i{
             color: var(--color-white) !important;
         } 
     }
-    .control-btn{
+    .control-button{
         padding: 1rem;
         cursor: pointer;
         background-color: var(--color-grey-4);
