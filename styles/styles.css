@@ -143,4 +143,28 @@ section {
   -webkit-box-shadow: var(--box-shadow-1);
           box-shadow: var(--box-shadow-1);
 }
+
+.sec1 {
+  background-color: #ae2727;
+}
+
+.sec2 {
+  background-color: #790c83;
+}
+
+.sec3 {
+  background-color: #482dc0;
+}
+
+.sec4 {
+  background-color: #27ae60;
+}
+
+.sec5 {
+  background-color: #d7e233;
+}
+
+.active-section {
+  display: block;
+}
 /*# sourceMappingURL=styles.css.map */
