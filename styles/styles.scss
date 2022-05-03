@@ -116,21 +116,42 @@ section{
 }
 
 .sec1 {
+    display: none;
+    transform: translate(0) scale(1);
     background-color: #ae2727;
+    
 }
 .sec2 {
+    display: none;
+    transform: translate(0) scale(1);
     background-color: #790c83;
+    
 }
 .sec3 {
+    display: none;
+    transform: translate(0) scale(1);
     background-color: #482dc0;
 }
 .sec4 {
+    display: none;
+    transform: translate(0) scale(1);
     background-color: #27ae60;
 }
 .sec5 {
+    display: none;
+    transform: translate(0) scale(1);
     background-color: #d7e233;
 }
 
 .active-section{
     display: block;
+    animation: scaleAnim 1s ease-in-out;
+    @keyframes scaleAnim {
+        0%{
+            transform: translateY(-100%) 
+        }
+        100%{
+            transform: translateY(0) 
+        }
+    }
 }
